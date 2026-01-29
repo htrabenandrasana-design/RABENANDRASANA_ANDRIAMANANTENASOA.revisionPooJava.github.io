@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="icon" type="image/x-icon" href= "images/LogoPOO.png">
+		<link rel="stylesheet" type = "text/css" href="styles.css">
+		<meta charset= "utf-8">
+		<meta name="author" content="ANDRIAMANANTENASOA & RABENANDRASANA">
+		<meta name="description" content="Page web de révision cours des Outils Java- basé sur le cours de M.LEMAIRE (CY Paris Université).">
+		<title> Révision Java : Outils</title>
+	</head> 
+	<body> 
+		<header> 
+			<h1>Outils Java </h1>
+			<img class="logo" src="images/LogoCY.png" alt="imageCY">
+			<nav>
+			<p>Sommaire:</p>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="generalite.html">Généralités</a></li>
+					<li><a href="principes_poo.html">Programmation Orientée Objet</a></li>
+					<li><a href="interface.html">Interface et Swing</a></li>
+					<li><a href="outil_java.html">Outils Java</a></li>
+					<li><a href="exercices.html">Exercices</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<main>
+			<section>
+				<h2>Les tableaux</h2>
+				<p>En Java, les tableaux peuvent être de taille fixe (statique). Une fois créés, on ne peut pas changer leur taille. Leur manipulation est similaire au langage C. Exemples:</p>
+				<code>int[] tab = new init[5];</code>
+				<code>int[] tab2 = {0,1,2,3,4};</code>
+				<p>On a la longeur du tableau avec <code>tab.<em>length</em></code>.</p>
+			</section>
+			<section>
+				<h2>Les Collections (java.util)</h2>
+				<p>Les collections ont une taille dynamique. Les collections sont des ensembles qui stockent que des objets (c'est-à-dire que des références).</p>
+				<article>
+					<h3>L'interface List (<code>ArrayList</code>)</h3>
+					<p>La classe <code>ArrayList</code> est la plus utilisée et fonctionne comme un tableau dynamique. Exemple : <code>ArrayList al;</code></p>
+					<ul>
+						<li><code>al = new ArrayList(...)</code> : Initialise la collection.</li>
+						<li><code>al.add(E element)</code> : Ajoute un élément.</li>
+						<li><code>al.get(int i)</code> : Récupère un élément.</li>
+						<li><code>al.size()</code> : Renvoie la taille de la collection.</li>
+					</ul>
+				</article>
+				<article>
+					<h3>L'interface Map (Dictionnaire <code>HashMap</code>)</h3>
+					<p>La classe <code>HashMap</code> est un ensemble organisé sous la forme de <strong>clef/valeur</strong>. Exemple : <code>HashMap hm;</code></p>
+					<ul>
+						<li><code>Etudiant e1 = new Etudiant("001",...); hm.put(e1.getNumero(),e)</code> : Ajoute un Objet.</li>
+						<li><code>hm.get(Objet clef)</code> : récupère la valeur d'une clef.</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h2>Gestion des Erreurs</h2>
+				<p>Une exception est un objet qui s'instancie lors de l'éxécution d'un code contenant une situation anormale détectée (erreur). Exemple concret :</p>
+				<figure>
+					<img class="images" id="incremente" src="images/exeption1.png" alt="ImageExempleException">
+					<figcaption>Code : <code>incrementer()</code> de la classe <code>CompteurCyclique</code> lance la classe Exception Personalisé <code>LimiteAtteintException</code> hérite de <code>Exception</code></figcaption>
+				</figure>
+				<figure>
+					<img class="images" id="chronometre" src="images/exeception2.png" alt="ImageExempleException">
+					<figcaption>Code : dans le <code>main</code> dans le <code>try</code> on met le code dangereux et <code>catch</code> si erreur</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>Architecture MVC et Java Swing</h2>
+				<p>Pour implémenter une interface graphique (GUI), on se base sur le modèle <strong>MVC</strong> qui sépare les données de leur affichage. Les éléments graphiques développés à l'aide de la bibliothèque de classes <strong><code>Swing</code></strong>.</p>
+				<table>
+					<caption>Tableau : Explication modèle MVC</caption>
+					<thead>
+						<tr>
+							<th>Composant</th>
+							<th>Rôle</th>
+							<th>Exemple</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>M</strong> = Modèle</td>
+							<td>Stocke les données + logique métier.</td>
+							<td>Ex: les classes <code>Etudiant</code>; <code>Playlist</code>.</td>
+						</tr>
+						<tr>
+							<td><strong>V</strong> = Vue</td>
+							<td>Affiche les données (via conteneurs Swing)</td>
+							<td>Ex: <code>JFrame</code>; <code>JTable</code>.</td>
+						</tr>
+						<tr>
+							<td><strong>C</strong> = Contrôleur</td>
+							<td>Gère l'intéraction utilisateur (évènements Entrée/Sortie).</td>
+							<td>Ex: <code>ActionListener</code> <code>ActionPerformed</code>.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<hr>
+		<footer>
+			<p><a href="#top">Haut de page</a></p>
+			<div>2026 - L2 Informatique - Grp B - TD Déveleppement Web - ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana - L2_Info_B Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</div>
+		</footer>
+	</body>
+</html>

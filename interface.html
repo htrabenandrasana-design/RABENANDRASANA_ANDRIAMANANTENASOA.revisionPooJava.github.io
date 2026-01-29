@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="icon" type="image/x-icon" href= "images/LogoPOO.png">
+        <link rel="stylesheet" type = "text/css" href="styles.css">
+        <meta charset= "utf-8">
+        <meta name="author" content="ANDRIAMANANTENASOA & RABENANDRASANA">
+        <meta name="description" content="Page web de révision cours de l'interface graphique et Java Swing basé sur le cours de M.LEMAIRE (CY Paris Université).">
+        <title> Révision Java : Interface et Swing</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bibliothèque Swing (IHM)</h1>
+            <img class="logo" src="images/LogoCY.png" alt="imageCY">
+            <nav>
+                <p>Sommaire:</p>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="generalite.html">Généralités</a></li>
+                    <li><a href="principes_poo.html">Programmation Orientée Objet</a></li>
+                    <li><a href="interface.html">Interface et Swing</a></li>
+                    <li><a href="outil_java.html">Outils Java</a></li>
+                    <li><a href="exercices.html">Exercices</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+    <main>
+        <section>
+            <h2>Architecture de la bibliothèque Swing</h2>
+            <article>
+                <h3>Le concept de conteneur</h3>
+                <p>
+                    En Java Swing, une interface est une imbrication de composants. Tout commence par une fenêtre principale (Top-Level Container) 
+                    dans laquelle on ajoute des composants intermédiaires ou atomiques.
+                </p>
+                <figure>
+                     <img class="images" id="heritageswing" src="images/swinheritage.png" alt="HiérarchieDesClassesSwing">
+                    <figcaption>Figure 1 : Hiérarchie simplifiée des classes graphiques (paquetage javax.swing)</figcaption>
+                </figure>
+                <ul>
+                    <li><strong>JButton :</strong> Un bouton poussoir standard capable de déclencher une action lors d'un clic.</li>
+                    <li><strong>JTextField :</strong> Un champ de saisie de texte sur une seule ligne (pour un nom, un code, etc.).</li>
+                    <li><strong>JScrollBar :</strong> Une barre de défilement (verticale ou horizontale) permettant de naviguer dans un contenu trop grand.</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Gestionnaires de mise en page (Layout Managers)</h2>
+            <p>
+                Contrairement au positionnement absolu (pixel par pixel), Java utilise des "Layouts" pour placer les éléments 
+                relativement les uns aux autres. Cela assure que la fenêtre reste belle même si on la redimensionne.
+            </p>
+            <table>
+                <caption>Comparatif des principaux Layouts</caption>
+                <thead>
+                    <tr>
+                        <th>Nom du Layout</th>
+                        <th>Description du comportement</th>
+                        <th>Utilisation typique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>BorderLayout</code></td>
+                        <td>Découpe l'espace en 5 zones : Nord, Sud, Est, Ouest, Centre.</td>
+                        <td>Fenêtre principale (JFrame par défaut).</td>
+                    </tr>
+                    <tr>
+                        <td><code>FlowLayout</code></td>
+                        <td>Place les éléments à la suite, de gauche à droite, et passe à la ligne si besoin.</td>
+                        <td>Barres d'outils, petits panneaux (JPanel par défaut).</td>
+                    </tr>
+                    <tr>
+                        <td><code>GridLayout</code></td>
+                        <td>Divise l'espace en une grille régulière (lignes x colonnes) de même taille.</td>
+                        <td>Calculatrices, grilles de jeux, formulaires alignés.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Composants graphiques (Widgets)</h2>
+            <p>Voici les éléments de base pour interagir avec l'utilisateur :</p>
+            <ul>
+                <li><strong>JPanel :</strong> Conteneur intermédiaire invisible, essentiel pour grouper des composants ensemble.</li>
+                <li><strong>JMenu :</strong> Menu déroulant situé dans une barre de menu (<code>JMenuBar</code>), contenant des options.</li>
+                <li><strong>JList :</strong> Affiche une liste verticale d'éléments (Strings, Objets) sélectionnables.</li>
+                <li><strong>JLabel :</strong> Affiche du texte court non modifiable ou une image.</li>
+                <li><strong>JComboBox :</strong> Liste déroulante (drop-down) permettant de choisir une valeur parmi plusieurs options compactes.</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interactivité : Les Listeners</h2>
+            <p>
+                Pour qu'un bouton "fasse quelque chose", on utilise le modèle événementiel. 
+                On attache un <strong>Listener</strong> à une source (le bouton).
+            </p>
+            <article>
+                <h3>Exemple de code (ActionListener)</h3>
+                <p>L'interface <code>ActionListener</code> oblige à redéfinir la méthode <code>actionPerformed</code>.</p>
+                <figure>
+                    <img src="images/actionListener.png" alt="imageCodeActionListener">
+                    <figcaption>Code: <code>"addActionListener"</code> utilisant une composante. <em>"Cliquez-moi"</em></figcaption>
+                </figure>
+            </article>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><a href="#top">Haut de page</a></p>
+        <div>2026 - L2 Informatique - Grp B - TD Déveleppement Web - ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana - L2_Info_B Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</div>
+    </footer>
+
+</body>
+</html>

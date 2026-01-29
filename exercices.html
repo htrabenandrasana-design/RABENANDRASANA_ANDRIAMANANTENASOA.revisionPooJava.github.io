@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="icon" type="image/x-icon" href= "images/LogoPOO.png">
+		<link rel="stylesheet" type = "text/css" href="styles.css">
+		<meta charset= "utf-8">
+		<meta name="author" content="ANDRIAMANANTENASOA & RABENANDRASANA">
+		<meta name="description" content="Page web d'exercices du cours de POO-Java basé sur le cours de M.LEMAIRE (CY Paris Université).">
+		<title> Principe POO - Java p5</title>
+	</head> 
+	<body>
+		<header>
+			<h1>Outils Java </h1>
+			<img class="logo" src="images/LogoCY.png" alt="imageCY">
+			<nav>
+				<p>Sommaire:</p>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="generalite.html">Généralités</a></li>
+					<li><a href="principes_poo.html">Programmation Orientée Objet</a></li>
+					<li><a href="interface.html">Interface et Swing</a></li>
+					<li><a href="outil_java.html">Outils Java</a></li>
+					<li><a href="exercices.html">Exercices</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<main>
+			<section>
+				<h2>Objetif de la page d'exercice</h2>
+				<p>Cette page regroupe des exercices types pour préparer les examens. Vous traiterez les notions suivantes :</p>
+				<ul>
+					<li>L'héritage et Polymorphisme</li>
+					<li>Manipulation de collection</li>
+					<li>Les exceptions</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Héritage et Polymorphisme</h2>
+				<article>
+					<h3>Exercice : classe <code>Point</code> et ses extentions</h3>
+					<figure>
+						<img class="images" id="heritage" src="images/umlPoint.png" alt="ExempleUml">
+						<figcaption>Schéma UML montrant un héritage</figcaption>
+					</figure>
+					<p>Enoncé :</p>
+					<ol>
+						<li>Créer une classe <code>Point</code> avec deux attributs privés <code>x</code> et <code>y</code> (entiers). Ajouter un constructeur et une méthode <code>afficher()</code>.</li>
+						<li> Créer une classe fille <code>PointColore</code> héritant de <code>Point</code>. Ajouter un attribut <code>couleur</code> (entier ou String).</li>
+						<li>Redéfinir la méthode <code>afficher()</code> pour qu'elle indique aussi la couleur.</li>
+					</ol>
+					<p><strong>Question cours</strong>: Expliquez le mécanisme et l’utilité de la notion d’« <code>Override</code> » (« Redéfinition ») en POO.</p>
+				</article>
+			</section>
+			<section>
+				<h2>Classes Abstraites et Exceptions</h2>
+				<article>
+					<h3>Exercice : Gestion de Figures</h3>
+					<p>Context : On manipule des formes géométriques de manière générique</p>
+					<p>Enoncé :</p>
+					<ol>
+						<li>Créer une classe abstraite <code>AbstractFigure</code> possédant deux méthodes abstraites :<code>calculerAire()</code> et <code>calculerPerimetre()</code>.</li>
+						<li>Implémenter une classe <code>Disque</code> qui hérite de <code>AbstractFigure</code>. Elle possède un attribut <code>rayon</code>.</li>
+						<li>Faire de même, créer les classes <code>Rectangle</code>, <code>Caree</code> et <code>Hexagone</code>.</li>
+						<li>Gestion Exception : Créer une exception personnalisée <code>DimensionNegativeException</code> et adapte tes classes selon cette exeption.</li>
+					</ol>
+					<p><strong>Question cours</strong> : Faire un schéma expliquant le mécanisme d'une Exception.</p>
+					<figure>
+						<img class="images" id="exception" src="images/schemaException.png" alt="SchémaException">
+						<figcaption>Exemple de réponse : Illustration du mécanisme de levée d'exception</figcaption>
+					</figure>
+				</article>
+			</section>
+		</main>
+		<hr>
+		<footer>
+			<p><a href="#top">Haut de page</a></p>
+			<div>2026 - L2 Informatique - Grp B - TD Déveleppement Web - ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana - L2_Info_B Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</div>
+		</footer>
+	</body>
+	
+</html>

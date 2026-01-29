@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="icon" type="image/x-icon" href= "images/LogoPOO.png">
+		<link rel="stylesheet" type = "text/css" href="styles.css">
+		<meta charset= "utf-8">
+		<meta name="author" content="ANDRIAMANANTENASOA & RABENANDRASANA">
+		<meta name="description" content="Page web de révision cours sur la Programmation Orientée Objet - basé sur le cours de M.LEMAIRE (CY Paris Université).">
+		<title> Révision Java : POO</title>
+	</head>
+	<body>
+		<header>
+			<h1>Outils Java </h1>
+			<img class="logo" src="images/LogoCY.png" alt="imageCY">
+			<nav>
+				<p>Sommaire:</p>
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="generalite.html">Généralités</a></li>
+					<li><a href="principes_poo.html">Programmation Orientée Objet</a></li>
+					<li><a href="interface.html">Interface et Swing</a></li>
+					<li><a href="outil_java.html">Outils Java</a></li>
+					<li><a href="exercices.html">Exercices</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>L’essentiel de la programmation orientée objet</h2>
+					<h3>Définitions</h3>
+				<p> <strong>La Programmation Orientée Objet </strong>est une approche de programmation reposant sur la notion d’objet.
+					Elle sert à regrouper les attributs et méthodes au sein d'une même entité et est structurée autour de classes.
+					Une <strong>classe</strong> est le modèle d'un objet et définit un nouveau type de donnée.
+					Un <strong>objet</strong> est une instance concrète d’une classe : il est créé en mémoire lors de l’exécution du programme.
+					Il regroupe aussi à la fois des données, appelées <em>attributs</em>, et des traitements, appelés <em>méthodes</em>.</p>
+				<p>Ces données sont alors protégées par <strong>l'encapsulation</strong>, un principe qui empêche tout accès direct aux attributs depuis l’extérieur de la classe.
+				La POO repose également sur le principe de <strong>héritage</strong> qui permet de créer une nouvelle classe à partir d'une classe existante, plus précisemment permet aux
+					classes dérivées de récupérer les attributs et méthodes de la classe (mère).
+					Enfin elle introduit le <strong>polymorphisme</strong> qui permet de manipuler des objets de types différents de manière uniforme.
+					Ce dernier peut être <em>simple</em>, lorsqu’une même méthode est <u>définie plusieurs fois</u> avec des signatures différentes et que le choix est effectué à la compilation,
+					ou <em>dynamique</em>, lorsqu’une <u>méthode redéfinie dans une classe dérivée est appelée à l’exécution</u> via une référence de la classe de base, en fonction du type réel de l’objet.
+				</p>
+				<article>
+					<h3>Classes abstraites</h3>
+					<p>La <strong>classe abstraite</strong> est une classe <em>non</em> instanciable. Elle représente le concept qui sur la base d'une autre classe,
+					contient au moins une méthode abstraite.Elle peut contenir des méthodes abstraites, c’est-à-dire déclarées sans implémentation, dont la définition est laissée aux classes dérivées.
+					Comme pour une méthode abstraite, le nom de la classe sera précédé du mot-clef <em>abstract</em>.
+					Le schéma ci-dessous illustre une classe abstraite servant de modèle général,
+					dont héritent plusieurs classes dérivées qui implémentent les méthodes abstraites et peuvent ajouter leurs propres comportements.</p>
+					<figure>
+						<img class="images" id="abstract" src="images/AbstractClass.png" alt="AbstractExemple">
+						<figcaption>Diagramme de classe représentant la classe abstraite.</figcaption>
+					</figure>
+				</article>
+				<article>
+					<h3>Interface</h3>
+					<p>L'<strong>interface</strong> est une structure <em>totalement abstraite</em>. Elle est déclarée dans une interface et déclare des méthodes sans fournir leur implémentation,
+					et impose donc aux classes implémentantes de définir leur comportement. Contrairement à l'héritage de classe, une classe peut implémenter plusieurs interfaces, ce qui permet de séparer
+					la définition des comportements et de garantir un comportement qui sera présent dans les classes concernées.
+					</p>
+					<figure>
+						<img class="images" id="interface" src="images/Interface1.png" alt="Exemple_Interface">
+						<figcaption>Diagramme de classe représentant une interface.</figcaption>
+					</figure>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p><a href="#top">Haut de page</a></p>
+			<div>2026 - L2 Informatique - Grp B - TD Déveleppement Web - ANDRIAMANANTENASOA Aina Mirija & RABENANDRASANA Hajatiana - L2_Info_B Sources : Documents de cours L2-Informatique Marc LEMAIRE CY Paris Université</div>
+		</footer>
+	</body>
+</html>

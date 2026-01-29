@@ -1,0 +1,156 @@
+.logo {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #bcd9eb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+header img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;                 
+    padding: 10px 30px;
+    background-color: #eef2f6;
+    border-radius: 8px;
+}
+
+nav li a{
+    display: block;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px;
+}
+th{
+    background-color: #c4c4c4;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+td{
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+strong {
+    font-weight: bold;
+    color: #A80000;
+}
+
+em{
+    color: black;
+}
+
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.images {
+    border: solid;
+}
+
+#heritage, #exception, #abstract, #hello_world{
+    width: 500px;
+}
+
+#interface, #incremente, #chronometre{
+    width: 400px;
+}
+#plansite, #heritageswing{
+    width: 650px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-decoration-line: underline;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #007BFF;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #bcd9eb;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #0056b3;
+}
